@@ -1,1 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Portfólio Caio Soares</title>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <style>
+    /* Estilos CSS */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
 
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    p {
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Portfólio</h1>
+  </header>
+
+  <div class="container">
+    <div id="tabs">
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+      <div id="sobre">
+        <h2>Sobre Mim</h2>
+        <p>Natural de Sorocaba - SP, buscando aprender e agregar na sociedade de forma autêntica na área de T.I. Atuo como suporte e ajudo na parte de desenvolvedor full-stack na empresa Informatec Serviços.</p>
+      </div>
+      <div id="projetos">
+        <h2>Projetos</h2>
+        <ul>
+          <li>
+            <h3>Cadastro de equipamentos</h3>
+            <p>Página criada com o intuito de organizar equipamentos da empresa, essa parte do site possui funções de editar, excluir ou até mesmo de vincular funcionário ao equipamento como emprestado, além claro como listar tipo, descrição, numeração e observações do aparelho.</p>
+          </li>
+          <li>
+            <h3>Pedido de refeição</h3>
+            <p>Com o intuito de evitar desperdício de comida, foi criada então a página solicitar almoço, onde a empresa cadastrava a refeição e o colaborador realiza o pedido que desejava de acordo com o cadastro já feito, existindo opções de editar ou até excluir de forma automática caso ele(a) estivesse ausente no local.</p>
+          </li>
+          <li>
+            <h3>Caixa de críticas e sugestões</h3>
+            <p>Para evitar o uso desnecessário de papel e facilitar a leitura, foi criada a página para ajudar os funcionários a darem suas contribuições em forma de mensagem e chegando de forma mais fácil para quem precisava ler.</p>
+          </li>
+        </ul>
+      </div>
+      <div id="contato">
+        <h2>Contato</h2>
+        <p>Entre em contato comigo através do seguinte endereço de e-mail: <a href="mailto:seuemail@example.com">seuemail@example.com</a>.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+    $(function() {
+      $("#tabs").tabs();
+    });
+  </script>
+</body>
+</html>
